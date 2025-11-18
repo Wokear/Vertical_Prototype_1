@@ -1,0 +1,62 @@
+{
+  "title": "Pan-Seared Steak",
+  "slideshowImages": [
+    "../images/steak/slide 1.jpg",
+    "../images/steak/slide 2.jpg",
+    "../images/steak/slide 3.jpg"
+  ],
+  "rating": "★★★★★ 5.0",
+  "difficulty": "Medium",
+  "time": "20 mins",
+  "ingredients": [
+    { "ingredient": "Steak", "unit": "1 piece" },
+    { "ingredient": "Coarse Salt", "unit": "to taste" },
+    { "ingredient": "Black Pepper", "unit": "to taste" },
+    { "ingredient": "Olive Oil", "unit": "1 tbsp" }
+  ],
+  "steps": [
+    {
+      "instructions": [
+        "Place steak on paper towels.",
+        "Press gently to remove surface moisture.",
+        "Ensure both sides are completely dry."
+      ],
+      "image": "../images/steak/slide 1.jpg",
+      "time": "1 min"
+    },
+    {
+      "instructions": [
+        "Sprinkle coarse salt evenly on both sides.",
+        "Add freshly ground black pepper.",
+        "Lightly pat seasoning to help it adhere."
+      ],
+      "image": "../images/steak/slide 2.jpg",
+      "time": "8 mins"
+    },
+    {
+      "instructions": [
+        "Heat a pan on high until very hot.",
+        "Add a small amount of olive oil.",
+        "Place steak into pan without moving it.",
+        "Flip once a crust has formed."
+      ],
+      "image": "../images/steak/slide 3.jpg",
+      "time": "4 mins"
+    },
+    {
+      "instructions": [
+        "Transfer steak onto a plate.",
+        "Let it rest for at least 5 minutes.",
+        "Slice and serve once juices redistribute."
+      ],
+      "image": "../images/steak/slide 1.jpg",
+      "time": "5 mins"
+    }
+  ],
+  "tips": [
+    "Dry steak gives a stronger sear and better crust.",
+    "Do not flip too early — wait until it naturally releases from the pan.",
+    "Resting prevents juices from leaking out when slicing."
+  ],
+  "tags": ["High-Protein", "Quick"]
+}

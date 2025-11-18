@@ -1,0 +1,98 @@
+{
+  "title": "Tomato Pork Spaghetti",
+  "slideshowImages": [
+    "../images/pasta/step1.jpg",
+    "../images/pasta/step2.jpg",
+    "../images/pasta/step3.jpg",
+    "../images/pasta/step4.jpg"
+  ],
+  "rating": "★★★ 3.4",
+  "difficulty": "Easy",
+  "time": "45 mins",
+  "ingredients": [
+    { "ingredient": "Spaghetti", "unit": "250g" },
+    { "ingredient": "Tomato", "unit": "1 pc" },
+    { "ingredient": "Onion", "unit": "1/2 pc" },
+    { "ingredient": "Carrot", "unit": "1 small, diced" },
+    { "ingredient": "Celery", "unit": "1 stalk, diced" },
+    { "ingredient": "Ground Pork", "unit": "150g" },
+    { "ingredient": "Butter", "unit": "20g" },
+    { "ingredient": "Tomato Seasoning Mix", "unit": "50g" },
+    { "ingredient": "Tomato Sauce / Ketchup", "unit": "20g" },
+    { "ingredient": "Black Pepper", "unit": "to taste" },
+    { "ingredient": "Salt", "unit": "1 tsp + to taste" },
+    { "ingredient": "Cheese Slice", "unit": "1 slice" },
+    { "ingredient": "Vegetable Oil", "unit": "as needed" },
+    { "ingredient": "Cooking Wine", "unit": "as needed" },
+    { "ingredient": "Water", "unit": "as needed for boiling pasta and sauce" }
+  ],
+  "steps": [
+    {
+      "instructions": [
+        "Finely dice onion, carrot, and celery.",
+        "Blend or grate the tomato to create a smooth pulp.",
+        "Set all prepped ingredients aside for cooking."
+      ],
+      "image": "../images/pasta/step1.jpg",
+      "time": "8 mins",
+      "tips": [
+        "Smaller diced vegetables create a smoother, sweeter sauce.",
+        "Fresh tomato can be partly substituted with tomato sauce if unavailable."
+      ]
+    },
+    {
+      "instructions": [
+        "Bring a large pot of salted water to a boil.",
+        "Add spaghetti and cook until al dente following package instructions.",
+        "Reserve a small amount of pasta water if desired."
+      ],
+      "image": "../images/pasta/step2.jpg",
+      "time": "10 mins",
+      "tips": [
+        "Use about 1 tsp of salt in boiling water for well-seasoned pasta.",
+        "Stop boiling when pasta is slightly firm; it will finish in the sauce."
+      ]
+    },
+    {
+      "instructions": [
+        "Heat vegetable oil and butter in a pot.",
+        "Add diced onion, carrot, and celery.",
+        "Sauté on medium-low until softened and fragrant."
+      ],
+      "image": "../images/pasta/step3.jpg",
+      "time": "6 mins",
+      "tips": [
+        "Slow cooking at medium-low heat brings out natural sweetness.",
+        "Stir regularly for even softening."
+      ]
+    },
+    {
+      "instructions": [
+        "Add ground pork and stir-fry until no longer pink.",
+        "Pour in cooking wine, tomato pulp, seasoning mix, and tomato sauce.",
+        "Season with salt and black pepper.",
+        "Simmer until sauce thickens and flavors combine."
+      ],
+      "image": "../images/pasta/step3.jpg",
+      "time": "10 mins",
+      "tips": [
+        "Scrape fond (brown bits) for richer flavor.",
+        "Add a splash of pasta water if the sauce becomes too thick."
+      ]
+    },
+    {
+      "instructions": [
+        "Drain cooked spaghetti and add to the sauce pot.",
+        "Toss until evenly coated and saucy.",
+        "Place cheese slice on top and melt briefly before serving."
+      ],
+      "image": "../images/pasta/step4.jpg",
+      "time": "3 mins",
+      "tips": [
+        "Mix over low heat for better absorption.",
+        "Serve immediately while hot and creamy."
+      ]
+    }
+  ],
+  "tags": ["Pasta", "Tomato", "Main Dish"]
+}

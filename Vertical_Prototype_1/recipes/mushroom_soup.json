@@ -1,0 +1,90 @@
+{
+  "title": "Creamy Mushroom Soup",
+  "slideshowImages": [
+    "../images/mushroom_soup/step1.jpg",
+    "../images/mushroom_soup/step2.jpg",
+    "../images/mushroom_soup/step3.jpg",
+    "../images/mushroom_soup/step4.jpg",
+    "../images/mushroom_soup/step5.jpg"
+  ],
+  "rating": "★★★★ 3.7",
+  "difficulty": "Easy",
+  "time": "15 mins",
+  "ingredients": [
+    { "ingredient": "Mushrooms", "unit": "3 pieces" },
+    { "ingredient": "Yellow Onion", "unit": "1/10 piece" },
+    { "ingredient": "Celery", "unit": "1/2 stalk" },
+    { "ingredient": "Butter", "unit": "40g (20g sautéing, 20g for roux)" },
+    { "ingredient": "Flour", "unit": "25g" },
+    { "ingredient": "Water", "unit": "1 tbsp" },
+    { "ingredient": "Milk", "unit": "250ml" },
+    { "ingredient": "Salt", "unit": "1 tsp" },
+    { "ingredient": "White Pepper", "unit": "1 tsp" },
+    { "ingredient": "Black Pepper", "unit": "a pinch" }
+  ],
+  "steps": [
+    {
+      "instructions": [
+        "Slice mushrooms into even pieces.",
+        "Finely chop the onion.",
+        "Cut celery into small, thin pieces so they soften quickly."
+      ],
+      "image": "../images/mushroom_soup/step1.jpg",
+      "time": "2 mins",
+      "tips": [
+        "Mushrooms shrink when cooked, so avoid cutting them too thin."
+      ]
+    },
+    {
+      "instructions": [
+        "Add 20g butter to a pot and heat on low-medium.",
+        "Add mushrooms, onion, and celery to the pot.",
+        "Stir continuously until softened and fragrant."
+      ],
+      "image": "../images/mushroom_soup/step2.jpg",
+      "time": "4 mins",
+      "tips": [
+        "Avoid high heat to prevent butter from browning too quickly."
+      ]
+    },
+    {
+      "instructions": [
+        "Add the remaining 20g butter to the pot.",
+        "Sprinkle flour evenly over the mixture.",
+        "Stir continuously to form a smooth roux with no dry flour visible."
+      ],
+      "image": "../images/mushroom_soup/step3.jpg",
+      "time": "2 mins",
+      "tips": [
+        "A pale golden roux gives a mild flavor suitable for creamy soups."
+      ]
+    },
+    {
+      "instructions": [
+        "Slowly add water and milk while stirring.",
+        "Mix until the texture becomes smooth with no clumps.",
+        "Bring to a gentle simmer while stirring periodically."
+      ],
+      "image": "../images/mushroom_soup/step4.jpg",
+      "time": "5 mins",
+      "tips": [
+        "Adding milk gradually helps prevent curdling.",
+        "Reduce heat immediately if bubbling becomes too strong."
+      ]
+    },
+    {
+      "instructions": [
+        "Season with salt, white pepper, and black pepper.",
+        "Continue simmering until soup thickens to your preference.",
+        "Taste and adjust seasoning before serving."
+      ],
+      "image": "../images/mushroom_soup/step5.jpg",
+      "time": "3 mins",
+      "tips": [
+        "Blend half of the soup and return it to the pot for extra creaminess.",
+        "Top with parsley or croutons if desired."
+      ]
+    }
+  ],
+  "tags": ["Soup", "Creamy", "Quick"]
+}

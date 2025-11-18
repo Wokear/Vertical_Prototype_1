@@ -1,0 +1,525 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #c10404;
+}
+
+
+/* ===== LAYOUT CONTAINERS ===== */
+/*       |> used by all pages */
+/* Used for div */
+.container {
+    min-height: 100vh;
+    padding-bottom: 70px; /* Space for bottom nav */
+}
+
+/* Used for main */
+.content {
+    padding: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    flex: 1;
+    transition: color 0.2s, transform 0.2s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+.nav-item.active {
+    color: #007AFF;
+}
+
+.nav-icon {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.nav-text {
+    font-weight: 500;
+}
+
+/* Tags */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+}
+
+/* Legacy .tag class - now uses unified tag system */
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 2px solid #007AFF;
+    border-radius: 20px;
+    background: white;
+    color: #007AFF;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.back-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* HOMEPAGE*/
+.appbar {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.grid {
+    /* Masonry layout using CSS columns */
+    column-count: 2;
+    column-gap: 12px;
+    padding: 12px;
+    column-fill: balance;
+}
+
+/* Ensure cards don't break across columns */
+.grid .card-link {
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+}
+
+/* Ensure cards maintain their styling in masonry layout */
+.grid .card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.card {
+    border: 1px solid #e9e9e9;
+    border-radius: 14px;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    position: relative;
+}
+
+.card-link:hover .card {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-link:active .card {
+    transform: scale(0.96);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+
+.card-head {
+    padding: 10px 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.card-rating,
+.card-difficulty {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rating {
+    color: #007AFF;
+    font-variant-numeric: tabular-nums;
+}
+
+.rating-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+}
+
+.card-link:hover .rating-badge {
+    transform: scale(1.1);
+}
+
+.card-img {
+    position: relative;
+    height: 120px;
+    overflow: hidden; 
+    border-bottom: 1px solid #f0f0f0;
+    background: #f2f2f2;
+    border-radius: 0; 
+}
+
+    .card-img img,
+    .card-img .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: center; 
+        display: block;
+        transition: filter 0.25s ease;
+    }
+
+    .card-link:hover .card-img .card-image {
+        filter: brightness(1.1);
+    }
+
+.card-body {
+    padding: 10px 12px 12px;
+    position: relative;
+}
+
+    .card-body ul {
+        margin-left: 18px;
+        margin-bottom: 8px;
+        color: #333333;
+    }
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.recipe-tag-chip {
+    display: inline-block;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    border: none;
+}
+
+/* Tag color classes */
+.tag-breakfast {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.tag-quick {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.tag-protein {
+    background: #fecaca;
+    color: #991b1b;
+}
+
+.tag-comfort {
+    background: #f3e8ff;
+    color: #6b21a8;
+}
+
+.tag-vegetarian {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.tag-healthy {
+    background: #a7f3d0;
+    color: #064e3b;
+}
+
+.tag-italian {
+    background: #fed7aa;
+    color: #9a3412;
+}
+
+.tag-creamy {
+    background: #fde68a;
+    color: #78350f;
+}
+
+.tag-hard {
+    background: #fca5a5;
+    color: #7f1d1d;
+}
+
+.tag-seafood {
+    background: #bfdbfe;
+    color: #1e3a8a;
+}
+
+.tag-default {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.card-badges {
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.mini-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(243, 244, 246, 0.9);
+    border: 1px solid rgba(229, 231, 235, 0.8);
+    border-radius: 12px;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #374151;
+    white-space: nowrap;
+    backdrop-filter: blur(2px);
+}
+
+.time-badge {
+    background: rgba(239, 246, 255, 0.9);
+    border-color: rgba(191, 219, 254, 0.8);
+    color: #1e40af;
+}
+
+.difficulty-badge {
+    background: rgba(240, 253, 244, 0.9);
+    border-color: rgba(187, 247, 208, 0.8);
+    color: #166534;
+}
+
+
+.badge {
+    margin-left: 6px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 11px;
+    padding: 2px 6px;
+    color: #333333;
+}
+
+.diff {
+    color: #666666;
+    font-size: 12px;
+}
+
+@media (min-width: 900px) {
+    body {
+        display: flex;
+        justify-content: center;
+        background: #f5f5f5; 
+    }
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* ================= FIX LAYOUT ================= */
+
+.mobile-shell {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container,
+.content {
+    width: 100%;
+    flex: 1;
+    padding-bottom: 80px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100%;
+    max-width: 450px;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Desktop behavior */
+@media (min-width: 900px) {
+    body {
+        background: #f3f4f6;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-shell {
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+}
+
+/* ================= WELCOME OVERLAY MODAL ================= */
+
+.welcome-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.welcome-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.welcome-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px 24px;
+    max-width: 320px;
+    width: calc(100% - 40px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transform: scale(0.92);
+    transition: transform 0.25s ease;
+}
+
+.welcome-overlay.show .welcome-card {
+    transform: scale(1);
+}
+
+.welcome-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.welcome-subtitle {
+    font-size: 15px;
+    color: #6b7280;
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.welcome-button {
+    background: #c10404;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+    font-family: inherit;
+    width: 100%;
+}
+
+.welcome-button:hover {
+    background: #a00303;
+}
+
+.welcome-button:active {
+    transform: scale(0.98);
+}
